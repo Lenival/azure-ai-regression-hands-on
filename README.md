@@ -1,7 +1,7 @@
 # Azure AI Regression Hands-on
 Simple regression application based on Azure [AI Tutorial](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html). Make an effort to use the environment in English, as technical terms such as Deploy and Endpoint (*Implantar* and *Ponto de extremidade*) are translated and can cause confusion. But if you are already using it in Portuguese for a first experiment, follow the tutorial below, it's a translation from Azure page with some scresn shots and more data points requests.
 
-# Portuguese automatic tutorial translation
+# Direct translation into Portuguese of the tutorial with screen shots and new test
 
 ## Use aprendizado de máquina automatizado para treinar um modelo
 O aprendizado de máquina automatizado permite que você experimente vários algoritmos e parâmetros para treinar vários modelos e identificar o melhor para seus dados. Neste exercício, você usará um conjunto de dados de detalhes históricos de aluguel de bicicletas para treinar um modelo que prevê o número de aluguel de bicicletas esperado em um determinado dia, com base em características sazonais e meteorológicas.
