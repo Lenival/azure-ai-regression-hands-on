@@ -1,5 +1,5 @@
 # Azure AI Regression Hands-on
-Simple regression application based on Azure [AI Tutorial](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html). Make an effort to use the environment in English, as technical terms such as Deploy and Endpoint (*Implantar* and *Ponto de extremidade*) are translated and can cause confusion. But if you are already using it in Portuguese for a first experiment, follow the tutorial below .
+Simple regression application based on Azure [AI Tutorial](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html). Make an effort to use the environment in English, as technical terms such as Deploy and Endpoint (*Implantar* and *Ponto de extremidade*) are translated and can cause confusion. But if you are already using it in Portuguese for a first experiment, follow the tutorial below, it's a translation from Azure page with some scresn shots and more data points requests.
 
 # Portuguese automatic tutorial translation
 
@@ -83,34 +83,50 @@ Selecione **Criar**. Após a criação do conjunto de dados, selecione o conjunt
 
 Quando o trabalho automatizado de aprendizado de máquina for concluído, você poderá revisar o melhor modelo treinado.
 
+![Alt text](img/passo1.png)
+
 1.    Na guia Visão geral do trabalho automatizado de aprendizado de máquina, observe o melhor resumo do modelo.
 
 2.    Selecione o texto em Nome do algoritmo do melhor modelo para visualizar seus detalhes.
 
+![Alt text](img/passo2.png)
+
 3.    Selecione a guia Métricas e selecione os gráficos residuais e predito_true se eles ainda não estiverem selecionados.
+
+![Alt text](img/passo2.1.png)
 
 Revise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico predito_true compara os valores previstos com os valores verdadeiros.
 
 ## Implantar e testar o modelo
 
 Na guia Modelo do melhor modelo treinado pelo seu trabalho automatizado de machine learning, selecione Implantar e use a opção de serviço Web para implantar o modelo com as seguintes configurações:
+
+![Alt text](img/passo3.png)
+
   - Nome : prever-aluguéis
   - Descrição : Prever aluguel de bicicletas
   - Tipo de computação : Instância de Contêiner do Azure
   - Habilitar autenticação : selecionado
 
-Aguarde o início da implantação – isso pode levar alguns segundos. O status de implantação do endpoint de previsão de aluguel será indicado na parte principal da página como Running .
 
-Aguarde até que o status da implantação mude para Succeeded . Isso pode levar de 5 a 10 minutos.
+![Alt text](img/passo4.png)
+
+Aguarde o início da implantação – isso pode levar alguns segundos. O status de implantação do endpoint de previsão de aluguel será indicado na parte principal da página como *Running*.
+
+Aguarde até que o status da implantação mude para *Succeeded*. Isso pode levar de 5 a 10 minutos.
+
+![Alt text](img/passo5.png)
 
 ## Testar o serviço implantado
 Agora você pode testar seu serviço implantado.
 
-1.    No estúdio Azure Machine Learning, no menu esquerdo, selecione Endpoints e abra o ponto final em tempo real de previsão de alugueres .
+1.    No estúdio Azure Machine Learning, no menu esquerdo, selecione Pontos de extremidade (tradução de *Endpoint*) e abra o pontos de extremidade em tempo real de previsão de aluguéis.
 
-2.    Na página do endpoint em tempo real de previsão de aluguel, visualize a guia Teste .
+2.    Na página do pontos de extremidade em tempo real de previsão de aluguel, visualize a guia Teste.
 
 3.    No painel Dados de entrada para testar o endpoint , substitua o modelo JSON pelos seguintes dados de entrada:
+
+![Alt text](img/passo6.png)
 
 ```JSON
  {
